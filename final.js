@@ -37,3 +37,18 @@ function  bestTeam( player1, player2 ) {
     if (score2 < score1) return player2.name;
     return "Tie";
 }
+
+// Problem-04: Same Same But Different
+
+function isSame(array1, array2) {
+    if (!Array.isArray(array1) || !Array.isArray(array2)) {
+        return "Invalid";
+    }
+    if (array1.length !== array2.length)
+        return false;
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] !== array2[i])
+            return false;
+    }
+    return true;
+}
