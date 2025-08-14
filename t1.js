@@ -1,3 +1,5 @@
+// Problem-01 : Train TT's Fine Calculator
+
 function totalFine( fare ) {
     if(typeof fare !== "number" || fare <= 0){
         return 'Invalid';
